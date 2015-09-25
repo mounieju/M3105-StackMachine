@@ -5,6 +5,7 @@ public class Machine
 	private CPU cpu;
 	private Memory programMemory;
 
+	
 	public Machine(CPU cpu, Memory programMemory, Stack expStack, Stack callStack, IO ioSystem)
 	{
 		super();
@@ -15,6 +16,9 @@ public class Machine
 		this.cpu.wireToCallStack(callStack);
 		this.cpu.wireToIoSubsystem(ioSystem);
 	}
+
+	
+
 
 	public void loadProgram(Program program) throws AddressOutOfBoundsException
 	{

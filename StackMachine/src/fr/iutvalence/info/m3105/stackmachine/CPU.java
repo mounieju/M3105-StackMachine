@@ -2,6 +2,7 @@ package fr.iutvalence.info.m3105.stackmachine;
 
 import java.io.IOException;
 
+
 public class CPU
 {
 
@@ -28,7 +29,11 @@ public class CPU
 	public final static int DUP		= 0x14;
 	public final static int POP		= 0x15;
 	
-	// TODO something is missing here...
+	private IO ioSystem;
+	private Memory memoryProgram;
+	private Stack callStack;
+	private Stack expStack;
+	private 
 
 	public void run()
 	{
@@ -36,10 +41,9 @@ public class CPU
 		{
 			while (true)
 			{
-				// TODO something is missing here...
-
-				// System.err.print("@" + this.programCounter + ": ");
-				switch (opCode)
+				Instruction instruction;
+				//System.err.print("@" + this.programCounter + ": ");
+				switch (instruction.getOpCode())
 				{
 					case HALT:
 					{
@@ -177,6 +181,43 @@ public class CPU
 			// TODO something is missing here...
 		}		
 	}
+
+	public void wireToProgramMemory(Memory programMemory) 
+	{
+		// TODO Auto-generated method stub	
+	}
+
+	public void wireToExpStack(Stack expStack) 
+	{
+		// TODO Auto-generated method stub
+		
+	}
+
+	public void wireToCallStack(Stack callStack)
+	{
+		// TODO Auto-generated method stub
+		
+	}
+
+	public void wireToIoSubsystem(IO ioSystem) 
+	{
+		// TODO Auto-generated method stub
+		
+	}
+
+	public void clearStacks() 
+	{
+		// TODO Auto-generated method stub
+		
+	}
+
+	public void setPC(int address) 
+	{
+		// TODO Auto-generated method stub
+		
+	}
+
+
 
 	// TODO something is missing here...
 }

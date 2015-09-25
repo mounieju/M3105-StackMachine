@@ -14,7 +14,7 @@ public class IO
 	private PrintStream err;
 	
 	
-	public IO(InputStream inStream, OutputStream outStream, OutputStream errStream)
+	public IO(InputStream inStream, OutputStream outStream, OutputStream errStream)  
 	{
 		super();
 		this.in = new BufferedReader(new InputStreamReader(inStream));
