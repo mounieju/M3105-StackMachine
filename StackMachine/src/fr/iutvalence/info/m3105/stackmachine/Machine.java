@@ -6,6 +6,9 @@ public class Machine
 
 	private CPU cpu;
 	private Memory programMemory;
+	private IO ioSystem;
+	private Stack expStack;
+	private Stack callStack;
 	
 
 	//////////////////// Constructors ////////////////////////////////////////////////////// 
@@ -15,6 +18,10 @@ public class Machine
 		super();
 		this.cpu = cpu;
 		this.programMemory = programMemory;
+		this.callStack = callStack;
+		this.expStack = expStack;
+		this.ioSystem = ioSystem;
+		
 		this.cpu.wireToProgramMemory(programMemory);
 		this.cpu.wireToExpStack(expStack);
 		this.cpu.wireToCallStack(callStack);
@@ -23,7 +30,6 @@ public class Machine
 
 	
 	//////////////////// Methods ////////////////////////////////////////////////////////
-
 
 	public void loadProgram(Program program) throws AddressOutOfBoundsException
 	{

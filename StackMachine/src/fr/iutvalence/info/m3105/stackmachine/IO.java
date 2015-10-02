@@ -7,7 +7,7 @@ import java.io.InputStreamReader;
 import java.io.OutputStream;
 import java.io.PrintStream;
 
-public class IO
+public class IO		//definir interface pure (2-3 methode)
 {
 	////////////////// Attributes //////////////////////////////////////////////////////
 
@@ -29,13 +29,13 @@ public class IO
 
 	public void displayRuntimeError(String string)
 	{
-		System.err.println(string);
+		this.err.println(string);
 		
 	}
 	
 	public void displayProgramTermination()
 	{
-		System.out.println("(HALT)");
+		this.out.println("(HALT)");
 	}
 
 	public int read() throws IOException

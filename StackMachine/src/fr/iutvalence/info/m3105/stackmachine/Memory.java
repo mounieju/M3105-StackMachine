@@ -15,6 +15,7 @@ public class Memory {
 	{	
 		this.startAdress = startAdress;
 		this.endAdress = endAdress;
+		this.board = new int [endAdress - startAdress];
 	}
 	
 	////////////////// Getters //////////////////////////////////////////////////////
@@ -29,7 +30,7 @@ public class Memory {
 
 	public void write(int currentAddress, int instructionParam)
 	{
-			
+			this.board[currentAddress] = instructionParam ;
 	}
 
 	public int read(int currentAddress)

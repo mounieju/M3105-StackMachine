@@ -50,8 +50,9 @@ public class MachineLauncher
 						new Instruction(CPU.MUL, null),
 						new Instruction(CPU.RET, null)
 				};
-		Program program = new Program(instructions);
 		
+		//pas toucher à gauche, mais on peut modifier à droite et toujours avoir le meme résultat
+		Program program = new Program(instructions);
 		Memory programMemory= null;
 		Stack expStack = null;
 		Stack callStack = null;
