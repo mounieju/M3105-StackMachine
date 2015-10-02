@@ -5,6 +5,7 @@ import java.io.IOException;
 
 public class CPU
 {
+	////////////////// Constants //////////////////////////////////////////////////////
 
 	public final static int HALT 	= 0x00;
 	public final static int PUSH  	= 0x01;
@@ -29,11 +30,12 @@ public class CPU
 	public final static int DUP		= 0x14;
 	public final static int POP		= 0x15;
 	
+	////////////////// Attributes //////////////////////////////////////////////////////
+	
 	private IO ioSystem;
 	private Memory memoryProgram;
 	private Stack callStack;
 	private Stack expStack;
-	private 
 
 	public void run()
 	{
@@ -41,9 +43,9 @@ public class CPU
 		{
 			while (true)
 			{
-				Instruction instruction;
+				
 				//System.err.print("@" + this.programCounter + ": ");
-				switch (instruction.getOpCode())
+				switch (opCode)
 				{
 					case HALT:
 					{

@@ -7,7 +7,7 @@ public class MachineLauncher
 	public static void main(String[] args)
 	{
 		/*
-		0x0: 		in	  		// read a value value from IO and push it to exp-stack
+		0x0: 		in	  		// read a value from IO and push it to exp-stack
 		0x1: 		call 0x5	// call the subroutine at @ of label named "fact"
 		0x3: 		out			// pop a value from exp-stack and print it via IO
 		0x4: 		halt		// stop the program
@@ -27,6 +27,8 @@ public class MachineLauncher
 								// push result on exp-stack
 		0x16		ret
 		*/
+		
+
 		Instruction[] instructions = 
 				new Instruction[] 
 				{

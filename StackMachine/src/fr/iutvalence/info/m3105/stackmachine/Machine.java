@@ -2,10 +2,14 @@ package fr.iutvalence.info.m3105.stackmachine;
 
 public class Machine
 {
+	////////////////// Attributes //////////////////////////////////////////////////////
+
 	private CPU cpu;
 	private Memory programMemory;
-
 	
+
+	//////////////////// Constructors ////////////////////////////////////////////////////// 
+
 	public Machine(CPU cpu, Memory programMemory, Stack expStack, Stack callStack, IO ioSystem)
 	{
 		super();
@@ -18,6 +22,7 @@ public class Machine
 	}
 
 	
+	//////////////////// Methods ////////////////////////////////////////////////////////
 
 
 	public void loadProgram(Program program) throws AddressOutOfBoundsException

@@ -9,10 +9,13 @@ import java.io.PrintStream;
 
 public class IO
 {
+	////////////////// Attributes //////////////////////////////////////////////////////
+
 	private BufferedReader in;
 	private PrintStream out;
 	private PrintStream err;
 	
+	//////////////////// Constructors ////////////////////////////////////////////////////// 
 	
 	public IO(InputStream inStream, OutputStream outStream, OutputStream errStream)  
 	{
@@ -21,6 +24,8 @@ public class IO
 		this.out = new PrintStream(outStream);
 		this.err = new PrintStream(errStream);
 	}
+
+	//////////////////// Methods ////////////////////////////////////////////////////////
 
 	public void displayRuntimeError(String string)
 	{

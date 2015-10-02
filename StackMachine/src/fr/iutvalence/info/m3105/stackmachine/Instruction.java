@@ -1,15 +1,21 @@
 package fr.iutvalence.info.m3105.stackmachine;
 
-public class Instruction {
-	
+public class Instruction 
+{
+	////////////////// Attributes //////////////////////////////////////////////////////
+
 	private int opCode;
 	private int[] instruc;
+
+	////////////////// Constructor //////////////////////////////////////////////////////
 
 	public Instruction(int opCode, int[] instruc) {
 		super();
 		this.opCode = opCode;
 		this.setInstruc(instruc);
 	}
+
+	////////////////// Getters & setters //////////////////////////////////////////////////////
 
 	private void setInstruc(int[] instruc2) 
 	{
@@ -19,8 +25,7 @@ public class Instruction {
 
 	public int getOpCode()
 	{
-		// TODO Auto-generated method stub
-		return 0;
+		return this.opCode;
 	}
 
 	public int[] getParams()
@@ -29,7 +34,8 @@ public class Instruction {
 		return null;
 	}
 
-	public int[] getInstruc() {
+	public int[] getInstruc() 
+	{
 		return instruc;
 	}
 
