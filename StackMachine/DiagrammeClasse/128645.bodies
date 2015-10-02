@@ -1,0 +1,7 @@
+class Stack
+!!!131589.java!!!	Stack(in size : int)
+		this.setSize(size);
+!!!131717.java!!!	getSize() : int
+		return size;
+!!!131845.java!!!	setSize(in size : int) : void
+		this.size = size;

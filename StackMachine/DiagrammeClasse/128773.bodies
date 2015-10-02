@@ -1,0 +1,15 @@
+class Instruction
+!!!128901.java!!!	Instruction(in opCode : int, inout instruc : int)
+		super();
+		this.opCode = opCode;
+		this.setInstruc(instruc);
+!!!129029.java!!!	setInstruc(inout instruc2 : int) : void
+		// TODO Auto-generated method stub
+		
+!!!129157.java!!!	getOpCode() : int
+		return this.opCode;
+!!!129285.java!!!	getParams() : int
+		// TODO Auto-generated method stub
+		return null;
+!!!129413.java!!!	getInstruc() : int
+		return instruc;

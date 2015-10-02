@@ -1,0 +1,12 @@
+class Memory
+!!!130693.java!!!	Memory(in startAdress : int, in endAdress : int)
+	
+		this.startAdress = startAdress;
+		this.endAdress = endAdress;
+!!!130821.java!!!	getStartAddress() : int
+	
+		return this.startAdress;
+!!!130949.java!!!	write(in currentAddress : int, in instructionParam : int) : void
+			
+!!!131077.java!!!	read(in currentAddress : int) : int
+			return this.board[currentAddress];

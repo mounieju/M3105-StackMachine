@@ -1,0 +1,9 @@
+class Program
+!!!131205.java!!!	Program(inout instructions : Instruction)
+		// TODO Auto-generated constructor stub
+!!!131333.java!!!	getInstructionCount() : int
+		// TODO Auto-generated method stub
+		return 0;
+!!!131461.java!!!	getInstructionAt(in instructionNumber : int) : Instruction
+		// TODO Auto-generated method stub
+		return null;
