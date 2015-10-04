@@ -51,7 +51,7 @@ public class MachineLauncher
 						new Instruction(CPU.RET, null)
 				};
 		
-		//pas toucher à gauche, mais on peut modifier à droite et toujours avoir le meme résultat
+		
 		Program program = new Program(instructions);
 		Memory programMemory= null;
 		Stack expStack = null;

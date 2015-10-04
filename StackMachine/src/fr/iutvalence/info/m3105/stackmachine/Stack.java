@@ -1,6 +1,6 @@
 package fr.iutvalence.info.m3105.stackmachine;
 
-public class Stack 
+public class Stack implements StackInterface
 {
 	////////////////// Attributes //////////////////////////////////////////////////////
 

@@ -4,7 +4,7 @@ public class Machine
 {
 	////////////////// Attributes //////////////////////////////////////////////////////
 
-	private CPU cpu;
+	private CPUAbstract cpu;
 	private Memory programMemory;
 	private IO ioSystem;
 	private Stack expStack;
@@ -13,7 +13,7 @@ public class Machine
 
 	//////////////////// Constructors ////////////////////////////////////////////////////// 
 
-	public Machine(CPU cpu, Memory programMemory, Stack expStack, Stack callStack, IO ioSystem)
+	public Machine(CPUAbstract cpu, Memory programMemory, Stack expStack, Stack callStack, IO ioSystem)
 	{
 		super();
 		this.cpu = cpu;

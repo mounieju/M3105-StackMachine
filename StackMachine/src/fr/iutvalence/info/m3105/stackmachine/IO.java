@@ -7,7 +7,7 @@ import java.io.InputStreamReader;
 import java.io.OutputStream;
 import java.io.PrintStream;
 
-public class IO		//definir interface pure (2-3 methode)
+public class IO	implements IOInterface	
 {
 	////////////////// Attributes //////////////////////////////////////////////////////
 
