@@ -1,9 +1,10 @@
-window_sizes 1280 962 351 923 682 82
+window_sizes 1917 1008 351 923 682 82
 diagrams
   active  classdiagram_ref 128005 // diagramme
-    923 806 100 4 0 0
+    1559 806 100 4 0 0
 end
 show_stereotypes
+selected class_ref 136069 // CPUAbstract
 open
   classview_ref 128005 // stackmachine
 end

@@ -1,7 +1,7 @@
 format 76
 "DiagrammeClasse"
-  revision 1
-  modified_by 5 ""
+  revision 2
+  modified_by 5 "olivier"
 
 
   
@@ -38,6 +38,7 @@ format 76
 
   mark_for_import
   
+  java_package "fr.iutvalence.info.m3105"
   package_ref 128005 // src
 
   package_ref 128773 // unknown
